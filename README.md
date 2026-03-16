@@ -25,7 +25,7 @@
 ---
 
 ### Посилання на сайт
-* **[САЙТ]([https://tur1kkk.github.io/DevBlogLab1Web/])**
+* **https://tur1kkk.github.io/DevBlogLab1Web/**
 
 ---
 2026 Лабораторна робота №1. Виконав студент групи КВ-31 Ющук Артур.

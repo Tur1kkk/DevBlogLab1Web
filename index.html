@@ -20,7 +20,7 @@
                     <li class="nav-item"><a href="index.html" class="nav-link text-white">Головна</a></li>
                     <li class="nav-item"><a href="profile.html" class="nav-link text-white">Профіль</a></li>
                     <li class="nav-item"><a href="about.html" class="nav-link text-white">Про додаток</a></li>
-                    <li class="nav-item"><a href="login.html" class="nav-link text-white">Вихід</a></li>
+                    <li class="nav-item"><a href="login.html" id="logout-btn" class="nav-link text-white">Вихід</a></li>
                 </ul>
             </nav>
         </div>
@@ -31,33 +31,10 @@
             <div class="col-md-8">
                 <h2 class="mb-4">Стрічка повідомлень</h2>
                 
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-body">
-                        <h3 class="card-title">Перший запис у блозі</h3>
-                        <p class="card-text">Це приклад текстового вмісту повідомлення. Тут може бути будь-яка цікава інформація для читачів.</p>
-                        <button class="btn btn-sm btn-outline-danger">Видалити пост</button>
-                        
-                        <hr>
-                        <h5>Коментарі:</h5>
-                        <div class="ms-3 mb-2 p-2 bg-light rounded">
-                            <strong>Олександр:</strong> Дуже цікава стаття, дякую!
-                        </div>
-                        <div class="ms-3 mb-2 p-2 bg-light rounded">
-                            <strong>Марія:</strong> Чекаю на продовження.
-                        </div>
-                    </div>
+                <div id="posts-container"></div>
                 </div>
 
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-body">
-                        <h3 class="card-title">Робота з Bootstrap 5</h3>
-                        <p class="card-text">Верстка статичних інтерфейсів стає значно швидшою завдяки готовим компонентам фреймворків.</p>
-                        <button class="btn btn-sm btn-outline-danger">Видалити пост</button>
-                        
-                        <hr>
-                        <h5>Коментарі:</h5>
-                        <p class="text-muted ms-3">Коментарів поки немає...</p>
-                    </div>
+                <div id="posts-container"></div>
                 </div>
             </div>
 
@@ -67,13 +44,13 @@
                     <form>
                         <div class="mb-3">
                             <label class="form-label">Назва</label>
-                            <input type="text" class="form-control" placeholder="Заголовок повідомлення">
+                            <input type="text" id="post-title" class="form-control" placeholder="Заголовок повідомлення">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Текст</label>
-                            <textarea class="form-control" rows="4" placeholder="Про що хочете написати?"></textarea>
+                            <textarea id="post-content" class="form-control" rows="4" placeholder="Про що хочете написати?"></textarea>
                         </div>
-                        <button type="button" class="btn btn-primary w-100">Опублікувати</button>
+                        <button type="button" id="add-post-btn" class="btn btn-primary w-100">Опублікувати</button>
                     </form>
                 </div>
             </div>
@@ -87,5 +64,11 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	
+	<script src="model.js"></script>
+    <script src="view.js"></script>
+    <script src="controller.js"></script>
+	
+	<script src="auth.js"></script>
 </body>
 </html>
